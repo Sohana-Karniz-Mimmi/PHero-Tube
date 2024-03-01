@@ -14,11 +14,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .active-category {
-          background-color: red;
-          color: white;
-        }
-      </style>
+      .active-category {
+        background-color: red;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <!-- Header section start -->
@@ -30,17 +30,14 @@
           </a>
         </div>
         <div class="navbar-center">
-          <button
-            id="sortViewBtn"
-            class="text-lg font-semibold btn btn-sm bg-rbg capitalize"
-          >
+          <button id="sortViewBtn" class="text-lg font-semibold btn btn-sm bg-rbg capitalize">
             Sort By View
           </button>
         </div>
         <div class="navbar-end">
           <a
             href="/blog.html"
-            class="btn btn-primary bg-[red] btn-sm capitalize border-[red] hover:text-white hover:border-secondary hover:bg-[red]"
+            class="btn btn-primary bg-[red] btn-sm capitalize border-[red] text-white hover:border-secondary hover:bg-[red]"
             >Blog</a
           >
         </div>
@@ -49,43 +46,33 @@
     <!-- Header section ends -->
 
     <main>
-        <!-- categories section start -->
+      <!-- categories section start -->
       <section id="categories" class="w-11/12 mx-auto text-center">
-        <ul
-          id="category_items"
+        <div
+          id="btn-container"
           class="my-5 flex justify-center items-center gap-5 flex-wrap"
         >
-          <li>
-            <span
-              class="text-lg font-semibold btn btn-sm bg-rbg capitalize hover:bg-primary hover:text-white rounded-md"
-              id="1000"
-              >All</span
-            >
-          </li>
-          <li>
-            <span
-              class="text-lg font-semibold btn btn-sm bg-rbg capitalize hover:bg-primary hover:text-white rounded-md"
-              id="1001"
-              >Music</span
-            >
-          </li>
-          <li>
-            <span
-              class="text-lg font-semibold btn btn-sm bg-rbg capitalize hover:bg-primary hover:text-white rounded-md"
-              id="1003"
-              >Comedy</span
-            >
-          </li>
-          <li>
-            <span
-              class="text-lg font-semibold btn btn-sm bg-rbg capitalize hover:bg-primary hover:text-white rounded-md"
-              id="1005"
-              >Drawing</span
-            >
-          </li>
-        </ul>
+        </div>
       </section>
       <!-- categories section Ends -->
+
+       <!-- All Video Cards section start -->
+      <section id="cards"
+      class="w-11/12 mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 my-10">
+      
+      </section>
+       <!-- All Video Cards section Ends -->
+
+       <!-- Empty Content Start -->
+       <section id="empty-content" class="hidden">
+        <div class="flex flex-col gap-5 justify-center items-center mt-[10%]">
+            <img src="./images/Icon.png" alt="">
+            <h3 class="text-3xl font-bold w-1/2 mx-auto text-center">
+                Oops!! Sorry, There is no content here
+            </h3>
+        </div>
+    </section>
+    <!-- Empty Content Start -->
     </main>
 
     <!-- script -->
